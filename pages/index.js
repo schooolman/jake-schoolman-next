@@ -26,6 +26,9 @@ export default function Home({ allPostsData }) {
           This is sample portfolio website that I will be building using Next.js
         </p>
       </section>
+      <h1 className="text-3xl font-bold underline">
+        Hello world!
+      </h1>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
