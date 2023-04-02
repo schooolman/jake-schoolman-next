@@ -20,29 +20,28 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>My name is Jake Schoolmeesters, I'm a Front End Web developer living in Chicago.</p>
-        <p>
-          This is sample portfolio website that I will be building using Next.js
-        </p>
-      </section>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>{title}</Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
-        </ul>
-      </section>
+      <div className=''>
+        <section className={utilStyles.headingMd}>
+          <p>My name is Jake Schoolmeesters, I'm a Front End Web developer living in Chicago.</p>
+          <p>
+            This is sample portfolio website that I will be building using Next.js
+          </p>
+        </section>
+        {/* <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+          <h2 className={utilStyles.headingLg}>Blog</h2>
+          <ul className={utilStyles.list}>
+            {allPostsData.map(({ id, date, title }) => (
+              <li className={utilStyles.listItem} key={id}>
+                <Link href={`/posts/${id}`}>{title}</Link>
+                <br />
+                <small className={utilStyles.lightText}>
+                  <Date dateString={date} />
+                </small>
+              </li>
+            ))}
+          </ul>
+        </section> */}
+      </div>
     </Layout>
   );
 }
