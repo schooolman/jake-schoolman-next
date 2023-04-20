@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import styles from './layout.module.css';
+import layoutStyles from '../styles/components/layout.module.scss';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 import NavBar from './navbar';
@@ -10,7 +10,7 @@ export const siteTitle = 'Jake Schoolmeesters\' Portfolio';
 
 export default function Layout({ children, home }) {
   return (
-    <div className='columns-1 m-40'>
+    <div className={layoutStyles.mainContainer}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -26,11 +26,9 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-        <NavBar/>
-        <div className='columns-2 m-8'>
-
-            <header className="flex flex-col content-center flex-1">
-            {/* <header className={styles.header}> */}
+        {/* <NavBar/> */}
+        <div className=''>
+            <header className="header">
                 {home ? (
                     <>
                         <Image
@@ -41,32 +39,32 @@ export default function Layout({ children, home }) {
                             width={144}   
                             alt="Picture of Jake Schoolmeesters"
                         />
-                        <h1 className={utilStyles.heading2Xl}>{name}</h1>
+                        <h1 className="text-white text-4xl weight-bold">{name}</h1>
                     </>
                 ) : (
                     <>
                         <Link href="/">
                             <Image
-                            priority
-                            src="/images/profile.jpg"
-                            className={utilStyles.borderCircle}
-                            height={108}
-                            width={108}
-                            alt=""
+                                priority
+                                src="/images/headshot.jpg"
+                                className={utilStyles.borderCircle}
+                                height={108}
+                                width={108}
+                                alt=""
                             />
                         </Link>
-                        <h2 className={utilStyles.headingLg}>
+                        <h1 className="color-white">
                             <Link href="/" className={utilStyles.colorInherit}>
                             {name}
                             </Link>
-                        </h2>
+                        </h1>
                     </>
                 )}
             </header>
       <main>{children}</main>
         </div>
       {!home && (
-        <div className={styles.backToHome}>
+        <div className={layoutStyles.backToHome}>
           <Link href="/">← Back to home</Link>
         </div>
       )}

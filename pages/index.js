@@ -22,7 +22,7 @@ export default function Home({ allPostsData }) {
       </Head>
       <div className=''>
         <section className={utilStyles.headingMd}>
-          <p>My name is Jake Schoolmeesters, I'm a Front End Web developer living in Chicago.</p>
+          <p className='text-white'>My name is Jake Schoolmeesters, I'm a Front End Web developer living in Chicago.</p>
         </section>
         {/* <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
           <h2 className={utilStyles.headingLg}>Blog</h2>
