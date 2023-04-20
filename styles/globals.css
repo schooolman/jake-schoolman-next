@@ -25,6 +25,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  color: #ffffff;
+}
+
 a:hover {
   text-decoration: underline;
 }
@@ -32,4 +36,8 @@ a:hover {
 img {
   max-width: 100%;
   display: block;
+}
+
+#__next {
+  height: 100%;
 }

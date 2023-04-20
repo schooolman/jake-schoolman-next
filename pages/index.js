@@ -1,6 +1,7 @@
+import utilStyles from '../styles/utils.module.css';
+import typography from '../styles/typography.module.scss';
 import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout';
-import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
 import Date from '../components/date';
@@ -22,7 +23,8 @@ export default function Home({ allPostsData }) {
       </Head>
       <div className=''>
         <section className={utilStyles.headingMd}>
-          <p className='text-white'>My name is Jake Schoolmeesters, I'm a Front End Web developer living in Chicago.</p>
+            <h3 className={typography.subHeading}>Front End developer</h3>
+            <h3 className={typography.subHeading}>Chicago</h3>
         </section>
         {/* <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
           <h2 className={utilStyles.headingLg}>Blog</h2>

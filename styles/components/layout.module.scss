@@ -1,25 +1,20 @@
-.container {
-    max-width: 36rem;
-    padding: 0 1rem;
-    margin: 3rem auto 6rem;
-  }
+@import '../variables.scss';
   
-  .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .backToHome {
-    margin: 3rem 0 0;
+.mainContainer {
+  background-color: $c-deep-purple;
+  display: flex;
+  height: 90%;
+  flex-wrap: nowrap;
+  margin: 5%;
+  padding: 50px;
+}
+
+.content {
+  &Navigation {
+    width: 20%;
   }
 
-  // Start Jakes custom
-
-  .mainContainer {
-    padding: 5%;
+  &Maincontent {
+    width: 50%;
   }
-
-  .main-container {
-    padding: 10%;
-  }
+}
