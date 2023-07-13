@@ -1,4 +1,5 @@
-import { getPage, getBlocks, getParagraphs } from "../utils/notion";
+import { getPage, getBlocks } from "../utils/notion";
+import { getParagraphs } from "../utils/utilities";
 
 import Layout from "../components/layout";
 import utilStyles from '../styles/utils.module.css';

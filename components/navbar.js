@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import NavItem from "./navitem";
 
 const MENU_LIST = [
+    // TODO: Make this dynamic based on structure in notion?
     { text: "Home", href: "/" },
     { text: "About", href: "/about" },
     { text: "Contact", href: "/contact" },

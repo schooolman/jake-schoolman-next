@@ -23,6 +23,11 @@ export async function getDatabase() {
   return response.results;
 }
 
-export function getParagraphs(blocks) {
-    return blocks.filter(paragraph => paragraph.paragraph != undefined);
+export async function getBlockList(id) {
+    const blockId = id;
+    const response = await notion.blocks.children.list({
+      block_id: blockId,
+      page_size: 50,
+    });
+    console.log(response);
 }
