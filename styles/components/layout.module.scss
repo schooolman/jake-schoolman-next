@@ -1,7 +1,7 @@
 @import '../variables.scss';
   
 .mainContainer {
-  background-color: $c-deep-purple;
+  background-color: $c-white;
   display: flex;
   height: 90%;
   flex-wrap: nowrap;
@@ -20,7 +20,7 @@
 }
 
 .backToHome {
-  color: $c-white;
+  // color: $c-white;
   position: absolute;
   top: 8%;
   right: 8%;
