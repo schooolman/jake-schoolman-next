@@ -6,6 +6,7 @@ import NavBar from './navbar';
 import layoutStyles from '../styles/components/layout.module.scss';
 import typography from '../styles/typography.module.scss';
 import utilStyles from '../styles/utils.module.css';
+import headerStyles from '../styles/components/header.module.scss';
 
 const name = 'Jake Schoolmeesters';
 export const siteTitle = 'Jake Schoolmeesters\' Portfolio';
@@ -37,14 +38,16 @@ export default function Layout({ children, home }) {
                     {home ? (
                         <>
                             <Link href="/">
-                                <Image
-                                    priority
-                                    src="/images/headshot.jpg"
-                                    className={utilStyles.borderCircle}
-                                    height={144}
-                                    width={144}   
-                                    alt="Picture of Jake Schoolmeesters"
-                                />
+                                <div className={headerStyles.headerImage}>
+                                    <Image
+                                        priority
+                                        src="/images/jake_selfie_scotland.jpg"
+                                        className={utilStyles.borderCircle}
+                                        fill={true}
+                                        style={{objectFit: "contain"}}
+                                        alt="Picture of Jake Schoolmeesters"
+                                    />
+                                </div>
                             </Link>
                             <h1 className={typography.title}>
                                 <Link href="/" className={utilStyles.colorInherit}>
@@ -57,7 +60,7 @@ export default function Layout({ children, home }) {
                             <Link href="/">
                                 <Image
                                     priority
-                                    src="/images/headshot.jpg"
+                                    src="/images/jake_selfie_scotland.jpg"
                                     className={utilStyles.borderCircle}
                                     height={144}
                                     width={144}   

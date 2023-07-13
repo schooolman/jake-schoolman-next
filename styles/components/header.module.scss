@@ -1,0 +1,17 @@
+@import '../variables.scss';
+
+.header {
+    &__image {
+        max-width: 450px;
+        position: relative;
+        object-fit: contain;
+    }
+}
+
+.headerImage {
+    height: 640px;
+    object-fit: contain;
+    position: absolute;
+    right: 5%;
+    width: 450px;
+}
