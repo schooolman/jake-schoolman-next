@@ -1,10 +1,10 @@
 import utilStyles from '../styles/utils.module.css';
-import typography from '../styles/typography.module.scss';
 import Head from 'next/head';
+import Image from 'next/image';
 import Layout, { siteTitle } from '../components/layout';
 import { getSortedPostsData } from '../lib/posts';
-import Link from 'next/link';
-import Date from '../components/date';
+import PageTitle from '../components/page-title';
+import headerStyles from '../styles/components/header.module.scss';
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -21,10 +21,21 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <div className=''>
+      <div>
         <section className={utilStyles.headingMd}>
-            <h3 className={typography.subHeading}>Front End developer</h3>
-            <h3 className={typography.subHeading}>Chicago</h3>
+          <div className={headerStyles.headerImage}>
+            <Image
+              priority
+              src="/images/jake_selfie_scotland.jpg"
+              className={utilStyles.borderCircle}
+              fill={true}
+              style={{objectFit: "contain"}}
+              alt="Picture of Jake Schoolmeesters"
+            />
+          </div>
+          <PageTitle
+            title={'Jake Schoolmeesters, Front End Developer'}
+            description={'Hi, my name is Jake Schoolmeesters and I\'m a Front End web developer based in Chicago, Illinois. I have over 8 years of experience working in different agencies, and startups. I\’ve been working with Adobe Experience Manager for the past 5 years, while helping to develop apprenticeship programs'}/>
         </section>
       </div>
     </Layout>

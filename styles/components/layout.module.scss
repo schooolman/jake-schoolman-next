@@ -2,9 +2,7 @@
   
 .mainContainer {
   background-color: $c-white;
-  // display: flex;
   height: 90%;
-  // flex-wrap: nowrap;
   margin: 5%;
   padding: 50px;
 }
@@ -26,14 +24,9 @@
       margin-right: 20px;
     }
   }
-
-  &Maincontent {
-    // width: 80%;
-  }
 }
 
 .backToHome {
-  // color: $c-white;
   position: absolute;
   top: 8%;
   right: 8%;

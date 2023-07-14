@@ -7,6 +7,7 @@ import layoutStyles from '../styles/components/layout.module.scss';
 import typography from '../styles/typography.module.scss';
 import utilStyles from '../styles/utils.module.css';
 import headerStyles from '../styles/components/header.module.scss';
+// import PageTitle from './page-title';
 
 const name = 'Jake Schoolmeesters';
 export const siteTitle = 'Jake Schoolmeesters\' Portfolio';
@@ -37,7 +38,7 @@ export default function Layout({ children, home }) {
                 <header className="header">
                     {home ? (
                         <>
-                            <Link href="/">
+                            {/* <Link href="/">
                                 <div className={headerStyles.headerImage}>
                                     <Image
                                         priority
@@ -46,14 +47,15 @@ export default function Layout({ children, home }) {
                                         fill={true}
                                         style={{objectFit: "contain"}}
                                         alt="Picture of Jake Schoolmeesters"
-                                    />
+                                        />
                                 </div>
-                            </Link>
-                            <h1 className={typography.title}>
+                            </Link> */}
+                            {/* <PageTitle></PageTitle> */}
+                            {/* <h1 className={typography.title}>
                                 <Link href="/" className={utilStyles.colorInherit}>
                                 {name}
                                 </Link>
-                            </h1>
+                            </h1> */}
                         </>
                     ) : (
                         <>
