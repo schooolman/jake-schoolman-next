@@ -28,6 +28,7 @@ h3,
 h4,
 h5 {
   color: $c-copy-gray;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -37,6 +38,8 @@ a {
 
 p {
   color: $c-copy-gray;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-weight: 300;
 }
 
 a:hover {

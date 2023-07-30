@@ -20,6 +20,9 @@ export default function Home({ allPostsData }) {
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet" />
       </Head>
       <div>
         <section className={utilStyles.headingMd}>
@@ -35,7 +38,8 @@ export default function Home({ allPostsData }) {
           </div>
           <PageTitle
             title={'Jake Schoolmeesters, Front End Developer'}
-            description={'Hi, my name is Jake Schoolmeesters and I\'m a Front End web developer based in Chicago, Illinois. I have over 8 years of experience working in different agencies, and startups. I\’ve been working with Adobe Experience Manager for the past 5 years, while helping to develop apprenticeship programs'}/>
+            description={'Hi, my name is Jake Schoolmeesters and I\'m a Front End web developer based in Chicago, Illinois. I have over 8 years of experience working in different agencies, and startups. I\’ve been working with Adobe Experience Manager for the past 5 years, while helping to develop apprenticeship programs'}
+            accentColor={'purple'}/>
         </section>
       </div>
     </Layout>

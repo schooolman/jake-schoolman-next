@@ -2,9 +2,9 @@
   
 .mainContainer {
   background-color: $c-white;
+  // background: linear-gradient(90deg, $c-white 80%, $c-blue-secondary 80%);
   height: 90%;
-  margin: 5%;
-  padding: 50px;
+  margin: 50px;
 }
 
 .content {

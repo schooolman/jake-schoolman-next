@@ -1,5 +1,32 @@
 @import '../variables.scss';
 
 .titleContainer {
-    max-width: 60%;
+    max-width: 40%;
+
+    h1 {
+        font-weight: 300;
+        
+        .purple {
+            position: relative;
+
+            &::before {
+                content: '';
+                display: inline-block;
+                position: abslute;
+                height: 30px;
+                width: 100%;
+                left: -20px;
+                background-color: $c-purple;
+            }
+        }
+    }
+
+    .purple {
+        font-weight: 700;
+    }
+
+    p {
+        position: relative;
+        z-index: 1;
+    }
 }

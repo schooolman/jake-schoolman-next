@@ -3,8 +3,8 @@
 .header {
     &__image {
         max-width: 450px;
-        position: relative;
         object-fit: contain;
+        position: relative;
     }
 }
 
@@ -12,6 +12,40 @@
     height: 640px;
     object-fit: contain;
     position: absolute;
-    right: 5%;
+    right: 50px;
     width: 450px;
+
+    &::before {
+        background-image: linear-gradient(-45deg, #ACF2D1 26%, transparent 20%), linear-gradient(135deg, #ACF2D1 25%, transparent 20%);
+        background-position: 0 0, 10px 10px;
+        background-size: 20px 20px;
+        content: '';
+        display: block;
+        height: 100%;
+        left: -70px;
+        position: absolute;
+        top: 50px;
+        width: 100%;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: $c-blue-secondary;
+        height: 135%;
+        width: 90%;
+        right: -70px;
+        top: -110px;
+    }
+
+    img {
+        z-index: 1;
+    }
+}
+
+.page-title_titleContainer {
+    h1 {
+        font-weight: 300;
+    }
 }
