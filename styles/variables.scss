@@ -1,11 +1,14 @@
 // Colors
 $c-white: #ffffff;
 $c-deep-purple: #1A0000;
+$c-light-purple: rgba(88, 40, 127, 0.56);
 $c-purple: #58287F;
 $c-blue-main: #118CD9;
 $c-blue-secondary: #2ECEF2;
+$c-light-blue: #D9F8FF;
 $c-teal-main: #ACF2D1;
 $c-copy-gray: #667883;
+$c-copy-dark: #002A44;
 
 // Gray Scale
 $c-gray-98: #f3f3f3;
@@ -24,3 +27,12 @@ $c-gray-20: #363636;
 $c-gray-15: #222222;
 $c-gray-10: #171717;
 $c-black: #000000;
+
+// Spacing
+$spacing-micro: 4px;
+$spacing-xs: 8px;
+$spacing-sm:   12px;
+$spacing-md:   20px;
+$spacing-lg:   32px;
+$spacing-xl:   52px;
+$spacing-xxl:  84px;

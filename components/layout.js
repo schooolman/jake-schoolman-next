@@ -12,9 +12,11 @@ import headerStyles from '../styles/components/header.module.scss';
 const name = 'Jake Schoolmeesters';
 export const siteTitle = 'Jake Schoolmeesters\' Portfolio';
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home, pageName }) {
+    console.log(pageName, 'home');
+
   return (
-    <>
+    <div className={layoutStyles[`${pageName}`]}>
         <Head>
             <link rel="icon" href="/favicon.ico" />
             <meta
@@ -30,7 +32,7 @@ export default function Layout({ children, home }) {
             <meta name="og:title" content={siteTitle} />
             <meta name="twitter:card" content="summary_large_image" />
         </Head>
-        <div className={layoutStyles.mainContainer}>
+        <div className={`${layoutStyles.mainContainer}`}>
             <div className={layoutStyles.contentNavigation}>
                 <NavBar />
             </div>
@@ -59,7 +61,7 @@ export default function Layout({ children, home }) {
                         </>
                     ) : (
                         <>
-                            <Link href="/">
+                            {/* <Link href="/">
                                 <Image
                                     priority
                                     src="/images/jake_selfie_scotland.jpg"
@@ -73,7 +75,7 @@ export default function Layout({ children, home }) {
                                 <Link href="/" className={utilStyles.colorInherit}>
                                 {name}
                                 </Link>
-                            </h1>
+                            </h1> */}
                         </>
                     )}
                 </header>
@@ -85,6 +87,6 @@ export default function Layout({ children, home }) {
             </div>
         )}
         </div>
-    </>
+    </div>
   );
 }

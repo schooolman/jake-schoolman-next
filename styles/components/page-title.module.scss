@@ -5,28 +5,36 @@
 
     h1 {
         font-weight: 300;
-        
-        .purple {
-            position: relative;
-
-            &::before {
-                content: '';
-                display: inline-block;
-                position: abslute;
-                height: 30px;
-                width: 100%;
-                left: -20px;
-                background-color: $c-purple;
-            }
-        }
-    }
-
-    .purple {
-        font-weight: 700;
+        color: $c-copy-dark;
+        z-index: 1;
     }
 
     p {
         position: relative;
         z-index: 1;
+    }
+}
+
+.purple {
+    position: relative;
+
+    &::before {
+        background: $c-light-purple;
+        bottom: -15px;
+        content: '';
+        display: inline-block;
+        height: $spacing-lg;
+        left: -10px;
+        position: absolute;
+        width: 100%;
+        z-index: 0;
+    }
+}
+
+.titleHeadline {
+    position: relative;
+
+    &.purple {
+        background-color: $c-purple;
     }
 }

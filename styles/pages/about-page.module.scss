@@ -1,0 +1,14 @@
+@import '../variables.scss';
+
+.aboutPageContainer {
+    display: flex;
+    align-items: center;
+}
+
+.aboutImage {
+    height: 540px;
+    object-fit: contain;
+    position: relative;
+    width: 100%;
+    margin-right: $spacing-lg;
+}
