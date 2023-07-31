@@ -20,7 +20,7 @@ export default function About({ block }) {
                 <div className={aboutPageStyles.aboutImage}>
                     <Image
                         priority
-                        src="/images/jake_selfie_scotland.jpg"
+                        src="/images/dirty-130.jpg"
                         className={utilStyles.borderCircle}
                         fill={true}
                         style={{objectFit: "contain"}}
