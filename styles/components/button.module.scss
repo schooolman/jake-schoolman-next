@@ -1,0 +1,11 @@
+@import '../variables.scss';
+
+.teal {
+    background-color: $c-teal-main;
+
+    &:hover {
+        color: $c-white;
+        cursor: pointer;
+        background-color: $c-light-purple;
+    }
+}

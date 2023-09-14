@@ -1,14 +1,26 @@
 @import '../variables.scss';
 
 .aboutPageContainer {
-    display: flex;
     align-items: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .aboutImage {
     height: 540px;
     object-fit: contain;
     position: relative;
-    width: 130%;
+    width: 45%;
     margin-right: $spacing-lg;
+}
+
+.paragraph {
+    width: 50%;
+
+    p {
+        font-family: $font-primary;
+        color: $c-copy-gray;
+        font-size: 18px;
+        line-height: 1.5;
+    }
 }

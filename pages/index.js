@@ -17,7 +17,7 @@ export async function getStaticProps() {
 
 export default function Home({ allPostsData }) {
   return (
-    <Layout home>
+    <Layout>
       <Head>
         <title>{siteTitle}</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -38,7 +38,7 @@ export default function Home({ allPostsData }) {
           </div>
           <PageTitle
             title={'Jake Schoolmeesters, Front End Developer'}
-            description={'Hi, my name is Jake Schoolmeesters and I\'m a Front End web developer based in Chicago, Illinois. I have over 8 years of experience working in different agencies, and startups. I\’ve been working with Adobe Experience Manager for the past 5 years, while helping to develop apprenticeship programs'}
+            description={'Hi, my name is Jake Schoolmeesters and I\'m a Front End web developer based in Chicago, Illinois. I have over 8 years of experience working in different agencies, and startups. I\’ve been working with Adobe Experience Manager for the past 5 years, while helping to develop apprenticeship programs and mentor juniors'}
             accentColor={'purple'}/>
         </section>
       </div>

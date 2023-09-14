@@ -6,13 +6,11 @@ import { getParagraphs } from "../utils/utilities";
 import Layout from "../components/layout";
 import utilStyles from '../styles/utils.module.css';
 import aboutPageStyles from '../styles/pages/about-page.module.scss';
+import CustomButton from "../components/button";
+import Banner from "../components/banner";
 
 export default function About({ block }) {
     const paragraphContent = getParagraphs(block);
-
-    const downloadResume = () => {
-        alert('Working on it! 😄');
-    }
 
     return (
         <Layout pageName="about">
@@ -27,7 +25,7 @@ export default function About({ block }) {
                         alt="Picture of Jake Schoolmeesters"
                     />
                 </div>
-                <section className={utilStyles.paragraph}>
+                <section className={aboutPageStyles.paragraph}>
                     <h1>A little about me...</h1>
                     {
                         paragraphContent.map((block) => {
@@ -38,10 +36,14 @@ export default function About({ block }) {
                             }
                         })
                     }
-
-                    <button onClick={downloadResume}>Download Resume</button>
+                    
+                    <CustomButton
+                        title={'Download Resume'}
+                        color={'teal'}
+                    />
 
                 </section>
+                <Banner></Banner>
             </div>
         </Layout>
     )

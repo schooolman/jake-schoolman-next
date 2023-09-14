@@ -38,12 +38,21 @@ a {
 
 p {
   color: $c-copy-gray;
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-family: $font-primary;
   font-weight: 300;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+button {
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  color: $c-copy-dark;
+  width: 260px;
+  height: 50px;
+  flex-shrink: 0;
+  border: none;
 }
 
 img {

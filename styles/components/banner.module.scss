@@ -1,0 +1,16 @@
+@import '../variables.scss';
+
+.bannerContainer {
+    background-color: $c-white;
+    display: flex;
+    // width: 100vw;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 10px;
+    
+
+    div {
+        background-color: $c-white;
+        width: 33%;
+    }
+}
