@@ -1,11 +1,12 @@
 @import '../variables.scss';
 
 .titleContainer {
-    max-width: 40%;
+    max-width: 45%;
 
     h1 {
-        font-weight: 300;
         color: $c-copy-dark;
+        font-size: 42px;
+        font-weight: 300;
         z-index: 1;
     }
 

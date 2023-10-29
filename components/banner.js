@@ -2,8 +2,6 @@ import React from "react";
 import bannerStyles from '../styles/components/banner.module.scss';
 
 const Banner = () => {
-    console.log('testing banner');
-
     // TODO: Figure out how to use Notion to author blocks?
 
     return(

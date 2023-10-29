@@ -1,0 +1,89 @@
+@import '../variables.scss';
+
+.navigation {
+    background-color: $c-teal-main;
+    display: block;
+    height: 300px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+    ul {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        justify-content: space-around;
+        margin: 0 auto;
+        max-width: 50%;
+    }
+
+    li {
+        color: $c-white;
+        font-size: 32px;
+        font-weight: 700;
+        position: relative;
+
+        &::after {
+            background-color: $c-purple;
+            bottom: 8px;
+            content: '';
+            display: block;
+            height: 8px;
+            left: 0;
+            opacity: 0;
+            position: absolute;
+            transition: opacity 200ms ease-in-out;
+            width: 100%;
+        }
+
+        &:hover::after {
+            opacity: 1;
+        }
+    }
+
+    a {
+        color: $c-white;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.menuButton {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.hamburgerClosed {
+    color: $c-white;
+    cursor: pointer;
+}
+
+.hamburgerOpen {
+    color: $c-white;
+    cursor: pointer;
+}
+
+.menuOpen {
+    height: 300px;
+
+    .hamburgerClosed {
+        display: none;
+    }
+}
+
+.menuClosed {
+    height: 0;
+
+    ul {
+        overflow: hidden;
+    }
+
+    .hamburgerOpen {
+        display: none;
+    }
+}

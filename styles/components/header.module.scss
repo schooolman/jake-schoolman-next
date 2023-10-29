@@ -13,7 +13,7 @@
     object-fit: contain;
     position: absolute;
     right: 50px;
-    width: 450px;
+    width: 40%;
 
     &::before {
         background-image: linear-gradient(-45deg, #ACF2D1 26%, transparent 20%), linear-gradient(135deg, #ACF2D1 25%, transparent 20%);
@@ -33,10 +33,10 @@
         display: block;
         position: absolute;
         background-color: $c-blue-secondary;
-        height: 135%;
+        height: 100vh;
         width: 90%;
         right: -70px;
-        top: -110px;
+        top: -85px;
     }
 
     img {
